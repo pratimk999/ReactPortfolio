@@ -1,0 +1,57 @@
+.customButton {
+  font-size: 14px !important;
+  background-color: var(--main-color) !important;
+  font-weight: 500;
+  border: 0px;
+  border-radius: 50px !important;
+  padding: 1px 12px;
+  outline: none;
+  line-height: 35px;
+  min-width: 110px !important;
+
+  /* margin-top: 30px !important; */
+}
+
+.darkmode--activated .customButton {
+  transition: transform 300ms ease-in-out;
+}
+
+.customButton .customButton__icon {
+  color: black;
+  background-color: white;
+  border-radius: 50px !important;
+  height: 27px;
+  width: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customButton .customButton__icon > .MuiSvgIcon-root {
+  font-size: 16px !important;
+}
+
+.customButton .customButton__text {
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  text-transform: none;
+  text-align: center;
+  margin-left: 5px;
+  margin-left: 5px;
+}
+
+.darkmode--activated .customButton:hover {
+  transition: 500ms transform ease-in-out !important;
+  transform: scale(1.04);
+}
+
+.darkmode--activated .customButton__icon .MuiSvgIcon-root {
+  color: black !important;
+}
+
+@media (max-width: 300px) {
+  .customButton {
+    font-size: 10px !important;
+  }
+}

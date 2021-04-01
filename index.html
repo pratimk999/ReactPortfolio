@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO: Change the font of website from google font(https://fonts.google.com/) -->
+<!-- TODO: Change the color scheme as you like -->
+<!-- TODO: Enable smooth scrolling -->
+<!-- TODO: Add scroll to top button -->
+<!-- TODO: Add a background image with 50% opacity on homepage -->
+<!-- TODO: Update fields with your details -->
+<head>
+    <title>Responsive Web Design Projects - Build a Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <button id="Button" onclick="goTop()"><i class="fas fa-long-arrow-alt-up"></i></button>
+    <header>
+        <nav id="navbar">
+            <a href="#about" class="nav-link">about</a>
+            <a href="#projects" class="nav-link">work</a>
+            <a href="#contact-me" class="nav-link">contact</a>
+            <a href="#education" class="nav-link">education</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome-section" class="main-section">
+            <h1>Hey i'm Pratim &#128526;</h1>
+            <div id="app"></div> <!-- TODO: Make this as typewriter effect - hint(https://github.com/tameemsafi/typewriterjs) -->
+            <a href="#contacts"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a> <!-- TODO: change the text to go down arrow icon -->
+        </section>
+        <!-- TODO: Introduce a About me section here and the button in nav tag: this section should have your image and a paragraph about you.-->
+
+        <section id="about" class="main-section">
+            <article class="about-sec">
+                <img src="image/profillepic1.jpeg" alt="">
+                <p id="about-para">An independent and self-motivated engineering student , tech enthusiast ,sports freak. Knowledge in
+Web Development. Always believe teamwork will lead you towards victory.Currently working on app Development.I am pursuing my B.Tech in Electronics & Computer sc from KIIT university</p>
+            </article>
+            <article class="about-sec" id="skills">
+                <h4>Here are few tools I use <i class="fas fa-tools"></i></h4>
+                <hr>
+                <ol>
+                    <li>
+                       <span>HTML5</span><span class="right">jQuery</span>
+                    </li>
+                    <li>
+                        <span>CSS3</span><span class="right">Git</span>
+                    </li>
+                    <li>
+                        <span>javascript</span><span class="right">Node js</span>
+                    </li>
+                    <li>
+                        <span>Bootstrap</span><span class="right">MongoDb</span>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <!-- TODO: Introduce a Education section here and the button in nav tag -->
+        <section id="education" class="main-section">
+            <p style="border: 3px solid rgb(207, 197, 188);margin-left: 200px;margin-right: 200px;">EDUCATION<i class="fas fa-book-open" style="margin-left: 10px;"></i></p>
+            <hr>
+            <article id="education-content">
+                <h3>BACHELOR OF TECHNOLOGY</h3>
+                <hr>
+                <p>Kalinga Institute of industrial Technology<span class="score">(cgpa-8.86)</span></p>
+                <h3>HIGHER SECONDARY</h3>
+                <hr>
+                <p>Berhampore J.N.Academy <span class="score">(92.4%)</span></p>
+                <h3>SECONDARY</h3>
+                <hr>
+                <p>Berhampore J.N.Academy <span class="score">(93%)</span></p>
+            </article>
+        </section>
+
+        <section id="projects" class="main-section">
+            <h2 style="border:2px solid rgb(207, 197, 188);padding: 10px;">These are some of my projects..<i class="fas fa-code"></i></h2>
+            <div id="projects-content">
+                <a href="https://pratimk999.github.io/portfolio/#contacts" class="project-tile"><img
+                        src="https://originsoftwares.com/img/portban.jpg"
+                        alt="portfolio page preview">
+                    My Portfolio</a>
+                <a href="https://pratimk999.github.io/Survey-Form/main.html" class="project-tile"><img
+                        src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/129245816/original/11624cb843ae69b3014a9e967686257c78be0f75/make-a-php-survey-form-9d78.png"
+                        alt="survey preview">Survey Form</a>
+                <a href="https://evening-plains-09931.herokuapp.com/blogs" class="project-tile"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-iOHwLJteqJqav1LboYx9SbDSKMIgtgzvgg&usqp=CAU"
+                        alt="blog preview">Simple blog </a>
+                <a href="https://github.com/pratimk999/YelpCamp" class="project-tile"><img
+                        src="https://images.unsplash.com/photo-1476041800959-2f6bb412c8ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="wikipedia viewer preview">YelpCamp</a>
+            </div>
+            <a href="http://github.com/pratimk999/" target="_blank" id="show-all">show all</a>
+            <!-- TODO: show all button should re-direct you to github in new tab -->
+        </section>
+
+        <!-- TODO: Introduce a contact me form here, (name, email, mobile, reason to contact?) - onclick -> submit, store value in localStorage -->
+        <section class="main-section" id="contact-me">
+            <p style="text-align: center;">Hey..fill up this form to reach to me</p>
+            <article id="contact-form">
+                <form>
+                    <label for="name">*Name</label>
+                    <input type="text" name="name" id="name"  placeholder="name" required><br>
+                    <label for="email">*Email</label>
+                    <input type="email" name="email" id="email" placeholder="enter your email" required><br>
+                    <label for="mobile">*Mob no.</label>
+                    <input type="number" name="mobile" id="mobile" maxlength="10" placeholder="enter your mobile no." required><br>
+                    <label for="reason">*Reason to contact</label>
+                    <textarea name="reason" id="reason" cols="33" rows="2" placeholder="enter your reason.." autofocus id="reason" required></textarea><br>                
+                    <button type="submit" id="button">Submit</button>
+                </form>
+            </article>
+        </section>
+
+        <section id="contacts" class="main-section">
+            
+            <h2>Let's work together...<i class="fab fa-facebook-square"></i></h2>
+            <p>How do you take your coffee?</p>
+            <!-- TODO: change all social link to use font-awesome icon(https://fontawesome.com/v4.7.0/get-started/) -->
+            <div id="contacts-content">
+                <div id="fcbk"><a href="https://www.facebook.com/pratim.kundu.5/" target="_blank"><i class="fab fa-facebook-square icons"></i></a></div>
+                <div id="github"><a href="https://github.com/pratimk999/" target="_blank" id="profile-link"><i class="fab fa-github-square icons"></i></a>
+                </div>
+                <div id="twitter"><a href="https://twitter.com/Pratim110?s=08" target="_blank"><i class="fab fa-twitter-square icons"></i></a></div>
+                <div id="email"><a href="mailto:pratimkundu15@gmail.com" target="_blank"><i class="fas fa-envelope-open-text icons"></i></a></div>
+                <div id="tel"><a href="tel:9547379702" target="_blank"><i class="fas fa-phone-square-alt icons"></i></a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer"><em>**This is just a fake portfolio.. All the projects and contact details given are not real..</em></p>
+        <p class="footer">© Copyright 2020</p>
+    </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

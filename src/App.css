@@ -1,0 +1,144 @@
+:root {
+  --main-color: #ffc500;
+  --dark-Mode: #e65100;
+}
+
+.app {
+  /* position: absolute; */
+  margin-top: 60px;
+  margin-bottom: 30px;
+  /* background-image: url("./assets/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+@media (max-width: 991px) {
+  .app {
+    margin-top: 30px !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+.container_shadow {
+  box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* .darkmode--activated .darkmode-background {
+  background-color: #252930 !important;
+} */
+
+.darkmode--activated .resume__element__header {
+  color: #fff;
+}
+.darkmode--activated
+  .profile__customTimeline__text
+  > .profile__customTimeline__text__span {
+  color: var(--dark-Mode);
+}
+
+.darkmode--activated .resume__customTimeline__text .time_Span {
+  color: #ffff8d;
+}
+
+.darkmode--activated .customTimeline .customTimeline__title {
+  color: var(--dark-Mode);
+}
+
+.darkmode--activated .portfolio .portfolio__custom__tabItem {
+  color: #fff;
+}
+
+.darkmode--activated .portfolio .portfolio__custom__tab__active {
+  color: var(--dark-Mode) !important;
+}
+
+.darkmode--activated .header .header__home {
+  background-color: var(--dark-Mode) !important;
+}
+
+.darkmode--activated .header .header__active {
+  color: var(--dark-Mode) !important;
+}
+
+.darkmode--activated .header .header__link:hover {
+  color: var(--dark-Mode) !important;
+}
+
+.darkmode--activated .customTimeline .customTimeline__dot__header {
+  background-color: var(--dark-Mode);
+}
+
+.darkmode--activated .customTimeline .customTimeline__dot {
+  border: 3px solid var(--dark-Mode);
+}
+
+.darkmode--activated .customButton {
+  background-color: black !important;
+}
+
+.darkmode--activated .customButton:hover {
+  color: #ef5f00 !important;
+}
+
+.darkmode--activated .resume .customTimeline__title {
+  letter-spacing: 3px;
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+  /* filter: drop-shadow(0 0 0.95rem white); */
+}
+
+@keyframes glow {
+  from {
+    /* text-shadow: 0 0px 5px var(--dark-Mode); */
+    filter: drop-shadow(0 0 0 var(--dark-Mode));
+  }
+  to {
+    /* text-shadow: 0 0px 5px #fff; */
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+}
+
+.darkmode--activated .header {
+  background-color: black !important;
+  filter: drop-shadow(0 0 0.55rem white) !important;
+}
+
+.darkmode--activated .navbar-toggler {
+  background-color: white !important;
+}
+
+.darkmode--activated .header .header__link {
+  color: #fcfcef !important;
+}
+
+.darkmode--activated .darkMode {
+  color: #00c8c8 !important;
+  filter: drop-shadow(0 0 0.75rem white) !important;
+}
+
+.darkmode--activated .MuiFormControl-root .MuiFormLabel-root {
+  color: #fff !important;
+}
+
+.darkmode--activated .MuiFormControl-root .MuiInputBase-input {
+  border-bottom: 1px solid whitesmoke !important;
+}
+
+.darkmode--activated .header__right .MuiSvgIcon-root {
+  color: #fcfcef !important;
+}
+
+.darkmode--activated .header .MuiSwitch-thumb {
+  color: var(--dark-Mode) !important;
+}
+
+.darkmode--activated .MuiInputBase-input {
+  color: white !important;
+}
+
+/* .darkmode--activated .react-reveal {
+  background-color: inherit !important;
+} */

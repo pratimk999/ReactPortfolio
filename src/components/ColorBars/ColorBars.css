@@ -1,0 +1,27 @@
+.colorBars {
+  width: 100%;
+  background-color: #dedede;
+  border-radius: 15px;
+  margin-top: 25px;
+  transition: 500ms filter ease;
+}
+
+.darkmode--activated .colorBars:hover {
+  filter: drop-shadow(0 0 0.35rem rgba(206, 201, 201, 0.9));
+  transition: 500ms filter ease;
+}
+
+.colorBars:hover {
+  filter: drop-shadow(0 0 0.35rem grey);
+  transition: 500ms filter ease;
+}
+
+.darkmode--activated .colorBars {
+  background-color: rgb(206, 201, 201) !important;
+}
+
+.colorBars__title {
+  padding: 25px;
+  color: rgba(25, 25, 25, 0.6);
+  font-weight: 600;
+}

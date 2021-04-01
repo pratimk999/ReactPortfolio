@@ -1,0 +1,159 @@
+.portfolio {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fefefe;
+}
+
+.portfolio__projects {
+  background-color: #fafafa;
+}
+
+.portfolio__modal__description {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.darkMode--activated .portfolio__title > .portfolio__title__text {
+  color: cyan;
+}
+
+.portfolio__title__text {
+  font-weight: 500 !important;
+  font-weight: 500;
+  color: var(--main-color) !important;
+}
+
+.portfolio__container {
+  padding: 30px 25px;
+}
+
+.portfolio .portfolio__title .portfolio__title__text {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.portfolio__typography {
+  text-align: center;
+  font-weight: 500;
+}
+.portfolio__caption {
+  font-size: 12px;
+  color: #989898;
+  letter-spacing: 0.00938em;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.portfolio__custom__tab__active {
+  color: var(--main-color) !important;
+}
+
+.portfolio__custom__tabItem {
+  padding: 0px !important;
+  min-width: 0px !important;
+  margin-right: 25px !important;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: inherit !important;
+}
+
+.portfolio__customCard {
+  height: 100%;
+  cursor: pointer;
+  width: 257px;
+  min-width: 130px;
+  max-width: inherit;
+  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.3) !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 2px 70px 0px rgba(0, 0, 0, 0.7);
+}
+
+.darkmode--activated .portfolio__customCard {
+  filter: drop-shadow(0 0 0.3rem white) !important;
+}
+
+.portfolio__modal {
+  scroll-behavior: smooth;
+}
+/* 
+.darkMode_modal {
+  background-color: grey !important;
+} */
+
+.darkMode_modal .MuiContainer-root {
+  background-color: rgb(29, 28, 28) !important;
+  color: white !important;
+}
+
+.darkMode_modal .portfolio__modal__description {
+  color: white !important;
+}
+
+.portfolio__grid {
+  transition: transform 300ms ease-in;
+}
+
+.portfolio__grid:hover {
+  transition: transform 300ms ease-in;
+  transform: scale(1.05);
+}
+
+.darkmode--activated .portfolio__grid {
+  transition: transform 300ms ease-in;
+}
+
+.darkmode--activated .portfolio__grid:hover .MuiCardContent-root {
+  background-color: white !important;
+  color: black !important;
+  transition: transform 300ms ease-in;
+  transform: scale(1.05);
+}
+
+.portfolio__customCard__image {
+  height: 140px;
+  width: 100%;
+}
+
+.MuiDialogActions-spacing {
+  padding-bottom: 30px !important;
+}
+
+.MuiDialogActions-spacing > :not(:first-child) {
+  margin-left: 25px !important;
+}
+
+@media (min-width: 250px) and (max-width: 320px) {
+  .portfolio__customCard {
+    width: 100%;
+  }
+  .MuiGrid-item {
+    width: 100%;
+  }
+  .MuiGrid-spacing-xs-4 {
+    justify-content: center;
+  }
+  .MuiTabs-flexContainer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 600px) {
+  .portfolio__customCard {
+    width: 100%;
+  }
+  .MuiGrid-item {
+    width: 100%;
+  }
+  .MuiGrid-spacing-xs-4 {
+    justify-content: center;
+  }
+  .MuiTabs-flexContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio__modal__image {
+  width: 100%;
+}

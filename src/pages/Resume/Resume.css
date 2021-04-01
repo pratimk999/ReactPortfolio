@@ -1,0 +1,231 @@
+.resume {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fefefe;
+}
+
+.resume__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.resume__middle .MuiAvatar-circle > img {
+  animation: rotate 3500ms linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.resume__top__left {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.resume__top__right {
+  flex: 0.5;
+  padding: 20px;
+}
+
+.resume__customTimeline__content {
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.resume .darkMode {
+  font-weight: 500;
+  color: var(--main-color) !important;
+}
+
+.resume .resume__motion {
+  flex: 0.5;
+}
+
+.resume .customTimeline .MuiTimelineContent-root {
+  padding-top: 0px !important;
+}
+
+.darkmode--activated .resume .darkMode {
+  color: #00c8c8 !important;
+}
+
+.resume__customTimeline__text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.resume__text {
+  color: #7f7f7f;
+  font-size: 14.5px;
+}
+
+.resume__element__header {
+  font-size: 18px;
+  font-weight: 550;
+  color: rgba(32, 30, 30, 0.7);
+}
+
+.resume__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.resume .MuiTimelineContent-root {
+  margin-bottom: 10px !important;
+}
+
+.resume .MuiTimelineSeparator-root .MuiTimelineConnector-root:nth-last-child() {
+  background-color: white;
+}
+
+.resume__middle {
+  padding: 20px 50px;
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+}
+
+.resume__middle__swiper {
+  width: inherit;
+}
+
+.swiper-slide {
+  width: calc(100vw / 13) !important;
+  height: 200px !important;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume__middle > .darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+.swiper-slide div {
+  color: #7f7f7f;
+}
+
+.swiper-container {
+  margin-top: 35px;
+}
+
+.time_Span {
+  width: 100%;
+  font-size: 13px;
+  color: #7f7f7f;
+}
+
+.resume__bottom {
+  padding: 30px;
+  padding-top: 10px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.resume__bottom__carousel {
+  width: 70% !important;
+  height: 540px !important;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.8);
+  margin-top: 55px;
+  margin-bottom: 30px;
+}
+
+.darkmode--activated .resume__bottom__carousel {
+  filter: drop-shadow(0 0 0.25rem white);
+}
+
+.resume__bottom h5 {
+  font-size: 23px;
+}
+
+.d-block w-100 {
+  height: 70% !important;
+  width: 70% !important;
+}
+
+.size__big {
+  max-height: 500px !important;
+}
+
+.carousel-indicators li {
+  background-color: #5b95e9 !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .resume__top {
+    flex-direction: column;
+    word-break: break-all;
+  }
+
+  .resume__bottom__carousel {
+    height: inherit !important;
+    width: 100% !important;
+  }
+  .resume__middle__swiper {
+    width: inherit;
+  }
+  .resume__bottom {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+  .swiper-slide {
+    width: 80px !important;
+    height: 200px !important;
+  }
+  .resume__middle {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .swiper-container {
+    padding: 30px 20px !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .swiper-container {
+    margin-top: 0px;
+    padding-bottom: 0px !important;
+  }
+  .resume__middle {
+    padding-bottom: 0px;
+  }
+  .resume__middle > .darkMode {
+    font-size: 17px;
+  }
+  .resume__bottom > .darkMode {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .resume__bottom__carousel {
+    height: inherit !important;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 800px) {
+  .swiper-slide {
+    width: 130px !important;
+    height: 200px !important;
+  }
+  .resume__middle {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .swiper-container {
+    padding-top: 30px !important;
+  }
+}

@@ -1,0 +1,128 @@
+.header {
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 0 22px 0 0 !important;
+  border-radius: 10px;
+}
+
+.header__right .darkMode_button {
+  cursor: pointer;
+  color: var(--main-color) !important;
+  font-size: 35px;
+}
+
+.darkmode--activated .header__right .darkMode_button {
+  cursor: pointer;
+  color: var(--dark-Mode) !important;
+  animation: rotate 3000ms linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header .header__home {
+  padding: 25px !important;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .header__right {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .header .navbar-nav {
+    padding-left: 20px !important;
+  }
+}
+
+@media (max-width: 300px) {
+  .header {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 994px) and (max-width: 1030px) {
+  .header__link,
+  .header__active {
+    padding-left: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 1034px) and (max-width: 1230px) {
+  .header__link,
+  .header__active {
+    padding-left: 15px !important;
+  }
+  .header__right {
+    padding: 15px;
+  }
+}
+
+.header__navLink {
+  padding: 0px !important;
+}
+
+.header__left {
+  margin-right: auto;
+}
+
+.header .header__link {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  transition: 300ms color ease-in-out;
+  color: darkslategray !important;
+}
+
+.header .header__link:hover {
+  font-weight: bolder;
+  transition: 300ms color ease-in-out;
+  color: var(--main-color) !important;
+}
+
+.header .header__active {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: var(--main-color) !important;
+}
+
+.header .header__home {
+  padding: 10px;
+  background-color: var(--main-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header__right > a > .MuiSvgIcon-root {
+  font-size: 16px;
+  margin-right: 12px;
+  color: black;
+  transition: 300ms transform ease-in-out;
+}
+
+.header .header__right > a > .MuiSvgIcon-root:hover {
+  font-size: 16px;
+  margin-right: 12px;
+  color: #55abed;
+  transition: 300ms transform ease-in-out;
+  transform: scale(1.2);
+}
+
+.darkmode--activated .header .header__right > a > .MuiSvgIcon-root:hover {
+  color: #00e0e0 !important;
+}

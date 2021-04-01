@@ -1,0 +1,65 @@
+.customBox {
+  padding: 25px;
+  margin-top: 30px;
+  margin-left: 15px;
+  border-radius: 15px;
+  min-height: 186px;
+  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  word-break: break-all;
+  transition: transform 300ms ease-in-out;
+}
+
+.darkmode--activated .customBox {
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.customBox:hover {
+  transition: transform 300ms ease-in-out;
+  transform: scale(1.05) translateY(-15px);
+  /* transform: rotateY(360deg); */
+}
+
+.customBox .customBox__top > img {
+  height: 40px;
+  width: 40px;
+  animation: rotate 2500ms linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.customBox .customBox__middle {
+  /* margin-top: 10px; */
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.customBox .customBox__bottom {
+  color: #989898;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  .customBox {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 280px) {
+  .customBox {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,67 @@
+.customTimeline {
+  padding: 0 !important;
+}
+
+.customTimeline .customTimeline__title {
+  padding-top: 20px !important;
+  font-size: 20px;
+  color: #fbc02d;
+}
+
+.customTimeline .customTimeline__firstItem {
+  min-height: 110px !important;
+}
+
+.customTimeline .MuiTimelineItem-root {
+  min-height: 0px;
+}
+
+.customTimeline .MuiTimelineItem-missingOppositeContent:before {
+  display: none;
+}
+
+.customTimeline .customTimeline__dot__header {
+  color: black;
+  background-color: var(--main-color);
+  font-size: smaller;
+  padding: 10px;
+}
+
+.customTimeline .customTimeline__dot {
+  color: black;
+  padding: 2px;
+  border: 3px solid var(--main-color);
+}
+
+.customTimeline .MuiTimelineConnector-root {
+  background-color: #eee !important;
+}
+
+.customTimeline .customTimeline__dot__header > .MuiSvgIcon-root {
+  font: size 20px;
+  color: darkslategray;
+}
+
+.customTimeline .customTimeline__separator {
+  padding-left: 19px !important;
+}
+
+.customTimeline .customTimeline__content {
+  padding-top: 0px !important;
+  margin-bottom: 20px;
+}
+
+.customTimeline .MuiTimelineContent-root {
+  padding-top: 2px !important;
+}
+
+/* .darkmode--activated .customTimeline__title,
+.customTimeline__firstItem {
+  color: white !important;
+} */
+
+@media (max-width: 600px) {
+  .customTimeline .customTimeline__title {
+    font-size: 15px;
+  }
+}
